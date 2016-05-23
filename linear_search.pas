@@ -12,14 +12,22 @@ var
   var
     i, ilast: integer;
   begin
-    my_linear_search := -1;
+    dec(n);
+
+    ilast := array_list[n];
+
+    array_list[n] := key;
 
     i := 0;
-    while (array_list[i] <> key) and (i < n) do
+    while (array_list[i] <> key) do
       inc(i);
 
-    if (i < n) then
-      my_linear_search := i;
+    array_list[n] := ilast;
+
+    if (array_list[i] = key) then
+      my_linear_search := i
+    else
+      my_linear_search := -1;
   end;
 
 begin
