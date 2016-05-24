@@ -10,9 +10,9 @@ var
 begin
 
   i:= 0;
-  z:= _LEN;
+  z:= length(array_list);
 
-  while (i < z) do
+  while (i < (length(array_list) Div 2)) do
   begin
     tmp := array_list[i];
     array_list[i] := array_list[z];
