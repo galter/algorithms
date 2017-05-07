@@ -9,6 +9,9 @@ Delphi - Completed
 - Binary Search
 - Array Reverse
 
+PHP - Completed
+---
+- Linear Search
 
 Tests
 ---
