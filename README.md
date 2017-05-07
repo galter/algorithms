@@ -12,6 +12,7 @@ Delphi - Completed
 PHP - Completed
 ---
 - Linear Search
+- Binary Search
 
 Tests
 ---
