@@ -1,17 +1,24 @@
 <?php
-    function linear_search($key, $n, $arr){
+    function linear_search($key, $n, $arr){        
         $n--;
+        // catch last position and store...
         $iLast = $arr[$n];
 
+        // put the $key value on last position...        
         $arr[$n] = $key;
 
+        // initalize $i for while looping...
         $i = 0;
+        // while element on $i index not equal to $key...        
         while ($arr[$i] != $key) {
+            // increment $i...
             $i++;
         }
 
+        // come back with the real last element...
         $arr[$n] = $iLast;
 
+        // if element on $i index equal to $key return $i else return -1...
         if ($arr[$i] == $key) {
             $return = $i;
         } else {
